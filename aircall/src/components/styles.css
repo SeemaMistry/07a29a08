@@ -1,0 +1,200 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .call-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .call-list {
+    width: 350px;
+    max-height: 500px;
+    overflow-y: auto;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .call-card {
+    background: #ffffff;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .call-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .call-details {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+  
+  .icon {
+    font-size: 20px;
+  }
+  
+  .incoming {
+    color: green;
+  }
+  
+  .outgoing {
+    color: red;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .view-btn, .archive-btn {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+  .view-btn {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .archive-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+  .call-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+  }
+  
+  /* Box styling for call details */
+  .call-details-box {
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Call Detail Info */
+  .call-details-box h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .call-details-box p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #555;
+  }
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+  
+  /* Back Button */
+  button.back {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  button.back:hover {
+    background-color: #0056b3;
+  }
+  
+
+  .archived-calls-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Title */
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Calls List */
+  .calls-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Call Card */
+  .call-card {
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  /* Unarchive Buttons */
+  .unarchive-btn, .unarchive-all-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+  }
+  
+  .unarchive-btn:hover, .unarchive-all-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* No Calls Message */
+  .no-calls {
+    font-size: 16px;
+    color: #777;
+    margin-top: 20px;
+  }
