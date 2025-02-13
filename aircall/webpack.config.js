@@ -4,6 +4,9 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   mode: "development",
   entry: "/src/index.js", // main js
+  devServer: {
+    allowedHosts: "all", // Accept requests from any host
+  },
   output: {
     path: path.resolve(__dirname, "dist"), // output folder
     publicPath: "/",
